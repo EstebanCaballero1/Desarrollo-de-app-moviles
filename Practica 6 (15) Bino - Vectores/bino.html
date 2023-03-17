@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Desafio Bino</title>
+	<script type="text/javascript" src="js/bino.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		let ingresado= parseInt(prompt('Ingrese un numero ', ' '));
+		let numero= [ingresado];
+		let aux=0, aux1=0, aux2=0, aux3=0;
+
+		document.write('<table style="border:solid">'+'<tr>');
+			document.write('<td style="border:solid">Entrada'+'</td>');
+			document.write('<td style="border:solid">Salida'+'</td>');
+		document.write('</tr>'+'<tr>');
+			document.write('<td style="border:solid">'+ingresado+'<br>');
+			for(let h=0; h<ingresado; h++){
+				numero[h]= parseInt(prompt('Ingrese un numero', ''));
+				document.write(numero[h]+' ');	
+			}
+			document.write('</td>');
+			document.write('<td style="border:solid">');
+
+			for(let g=0; g<ingresado; g++){
+				if(ContarMultiplosde2(numero[g])==1){
+					aux++;
+				}
+				if(ContarMultiplosde3(numero[g])==1){
+					aux1++;
+				}
+				if(ContarMultiplosde4(numero[g])==1){
+					aux2++;
+				}
+				if(ContarMultiplosde5(numero[g])==1){
+					aux3++;
+				}
+			}
+			document.write(aux+' Multiplo/s de 2'+'<br>');
+			document.write(aux1+' Multiplo/s de 3'+'<br>');
+			document.write(aux2+' Multiplo/s de 4'+'<br>');
+			document.write(aux3+' Multiplo/s de 5'+'<br>');
+
+			document.write('</td>');
+		document.write('</tr>'+'</table');
+	</script>
+</body>
+</html>
