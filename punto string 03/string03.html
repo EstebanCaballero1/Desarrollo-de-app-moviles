@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String 03</title>
+	<script type="text/javascript" src="js/string03.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		let tam= prompt('Ingresa la cantidad de nombres que desea ingresar ', ' ');
+		let ingresado=[tam], aux2='asddasd';
+		
+		document.write('<table style="border:solid"><tr><td style="border:solid">Entrada</td><td style="border:solid">Salida</td></tr>');
+		document.write('<tr><td style="border:solid">');
+		document.write(tam+'<br>');
+		for(let i=0; i<tam; i++){
+			ingresado[i]=prompt('Ingrese un nombre', ' ');
+			document.write(ingresado[i]+'<br>');
+		}
+		document.write('</td><td style="border:solid">');
+		
+		for(let j=0; j<tam; j++){
+			document.write(ConvertirNombre(ingresado[j])+'<br>')
+		}
+
+		document.write('</td></tr></table>');
+	</script>
+</body>
+</html>
