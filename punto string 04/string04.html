@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String 04</title>
+	<script type="text/javascript" src=js/string04.js></script>
+</head>
+<body>
+	<script type="text/javascript">
+		let ingresado= prompt('Ingrese una frase ', ' ');
+		let des= prompt('Ingrese la cantidad de desplazamientos', ' ');
+
+		document.write('<table style="border:solid"><tr><td style="border:solid">Entrada</td><td style="border:solid">Salida</td></tr>');
+		document.write('<tr><td style="border:solid">');
+			document.write(ingresado+'<br>');
+		document.write('</td><td style="border:solid">');
+			document.write(ConvertirFrase(ingresado, des)+'<br>')
+
+		document.write('</td></tr></table>');
+	</script>
+</body>
+</html>
