@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/houston.js"></script>
+</head>
+<body>
+    <script>
+        var n = prompt('Ingrese el tamaño del array');
+
+        var A = new Array(n);
+        var B = new Array(n);
+
+        for (var i = 0; i < n; i++) {
+            A[i] = Math.floor(Math.random() * 10);
+            B[i] = Math.floor(Math.random() * 10);
+        }
+
+        houston(A, B);
+    </script>
+</body>
+</html>
