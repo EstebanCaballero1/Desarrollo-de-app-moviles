@@ -1,4 +1,4 @@
-function sonBinarios(num1, num2) {
+function sonBinarios( num1, num2 ) {
     let combinado = num1 + num2; 
     const tamaño = combinado.length;
 
@@ -12,10 +12,8 @@ function sonBinarios(num1, num2) {
 }
 
 function cumplenRequisitos( num1, num2 ) {
-    while (num1.length !== num2.length || !sonBinarios(num1, num2)) {
-        alert('Las cadenas deben tener la misma longitud y ser binarias');
-        num1 = prompt('Ingrese el primer número', '');
-        num2 = prompt('Ingrese el número con el cual será comparado', '');
+    if (num1.length !== num2.length || !sonBinarios(num1, num2)) {
+        return false;
     }
 
     return true;
