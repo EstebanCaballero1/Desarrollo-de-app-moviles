@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamming</title>
+</head>
+<body>
+    <script src="js/hamming.js"></script>
+    <script>
+        let num1 = prompt('Ingrese el primer número', '');
+        let num2 = prompt('Ingrese el número con el cual será comparado', '');
+
+        if( cumplenRequisitos(num1, num2) ){            
+            document.write( 'La distancia de hamming entre ' + num1 + ' y ' + num2 + ' es: '+hammingEntre( num1, num2 ) );
+        };
+
+        </script>
+</body>
+</html>
