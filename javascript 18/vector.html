@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector</title>
+</head>
+<body>
+    <script src="js/vector.js"></script>
+    <script>
+        const N = parseInt( prompt( 'Ingrese la cantidad de elementos para el vector A:', '' ) );
+        const A = generarVectorA(N);
+        const promedioA = devuelvePromedio(A);
+        const B = generarVectorMayorAlPromedio(A, promedioA);
+        const cantidadMultiplosDe2Y3 = contarMultiplosDosTres(A);
+        const sumaTotal = sumaTodo(A);
+        const C = generarVectorConVectorX2(A);
+
+
+        document.write( "Resultados:" + "<br>");
+        document.write( "Vector A: " + A.join(", ") + "<br>" );
+        document.write( "Promedio de A: " + promedioA + "<br>" );
+        document.write( "Vector B: "+ B.join(", ") + "<br>" );
+        document.write( "Cantidad de elementos múltiplos de 2 y 3: " + cantidadMultiplosDe2Y3 + "<br>" );
+        document.write( "Suma total de A: " + sumaTotal + "<br>" );
+        document.write( "Vector C: " + C.join(", ") + "<br>" );
+    </script>
+</body>
+</html> 
