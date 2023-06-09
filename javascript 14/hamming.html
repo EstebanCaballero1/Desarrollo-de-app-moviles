@@ -9,17 +9,16 @@
 <body>
     <script src="js/hamming.js"></script>
     <script>
-        let num1 = prompt('Ingrese el primer número', '');
-        let num2 = prompt('Ingrese el número con el cual será comparado', '');
+        let num1 = prompt( 'Ingrese el primer número', '' );
+        let num2 = prompt( 'Ingrese el número con el cual será comparado', '' );
 
-        while (!cumplenRequisitos(num1, num2)) {
-            alert('Las cadenas deben tener la misma longitud y ser binarias');
-            num1 = prompt('Ingrese el primer número', '');
-            num2 = prompt('Ingrese el número con el cual será comparado', '');
+        while ( !cumplenRequisitos( num1, num2 ) ) {
+            alert( 'Las cadenas deben tener la misma longitud y ser binarias' );
+            num1 = prompt( 'Ingrese el primer número', '' );
+            num2 = prompt( 'Ingrese el número con el cual será comparado', '' );
         }
         
         document.write( 'La distancia de hamming entre ' + num1 + ' y ' + num2 + ' es: '+hammingEntre( num1, num2 ) );
-
         </script>
 </body>
 </html>
