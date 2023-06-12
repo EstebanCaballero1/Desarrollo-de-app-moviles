@@ -1,0 +1,44 @@
+.deportes {
+    position: relative;
+    top: 32vh;
+    left: 30.8vw;
+    width: 28.4vw;
+    height: 36vh;
+    background-color: #B2DFDB;
+    border-radius: 10px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vh;
+}
+
+.respuesta {
+    width: 22vw;
+}
+
+.bto {
+    width: 23vw; 
+    height: 5vh;
+    border-radius: 8px; 
+    border: 1px solid #8B4513;   
+    background-color: #CDB38B;
+    box-shadow: 2px 2px 4px #8B4513;
+    transition: 0.2s;
+    font-size: 1.5vw;
+    position: relative;
+    right: 1vh;
+    color: #8b4513a9;
+    cursor: pointer;
+    margin-left: 6vh;
+}
+
+.bto:hover {
+    transform: scale(1.05); 
+    background-color: #cfa565;
+    box-shadow: 2px 2px 4px #8b3b02;
+}
+
+.bto:active {
+    transform: scale(1.2); 
+    background-color: #af7012;
+    box-shadow: 2px 2px 4px #8b3b02;
+}

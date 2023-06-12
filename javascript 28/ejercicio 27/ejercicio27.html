@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 27</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="pizza">
+        <form>
+            <h2>Selección de Pizza</h2>
+            <label for="selectPizza">Selecciona una pizza:</label>
+            <select id="selectPizza" onchange="precioPizza()">
+                <option value="900">Jamón y Queso</option>
+                <option value="1200">Muzzarella</option>
+                <option value="1100">Morrones</option>
+            </select>
+            <br><br>
+            <label>Precio:</label>
+            <input type="text" id="pizza" value="La pizza cuesta: $900" readonly>
+        </form>           
+    </div>
+
+    <div class="presupuestoEquipo" id="presupuestoEquipo">
+        <div class="equipo">
+            <h2>Presupuesto de Equipo de Computación</h2>
+            <label for="selectProcesador">Procesador:</label>
+            <select id="selectProcesador">
+                <option value="400">Intel I3</option>
+                <option value="600">Intel I5</option>
+                <option value="800">Intel I7</option>
+            </select>
+            <br><br>
+
+            <label for="selectMonitor">Monitor:</label>
+            <select id="selectMonitor">
+                <option value="250">Samsung 20'</option>
+                <option value="350">Samsung 22'</option>
+                <option value="550">Samsung 26'</option>
+            </select>
+            <br><br>
+
+            <label for="selectDiscoDuro">Disco Duro:</label>
+            <select id="selectDiscoDuro">
+                <option value="300">500 Gb</option>
+                <option value="440">1 Tb</option>
+                <option value="500">3 Tb</option>
+            </select>
+            <br><br>
+
+            <button class="bto" onclick="calcularPresupuesto()">Calcular Presupuesto</button>
+            <br><br>
+
+            <label for="presupuesto">Presupuesto:</label>
+            <input type="text" id="presupuesto" readonly>
+        </div>
+    </div>
+    
+    <div class="pizza2">
+        <div id="calculadoraPizzas">
+            <h2>Calculadora de Pizzas</h2>
+            <label for="selectPizzaCantidad">Selecciona una pizza:</label>
+            <select id="selectPizzaCantidad">
+                <option value="4">Queso</option>
+                <option value="6">Jamón y Queso</option>
+                <option value="10">Especial</option>
+            </select>
+            <br><br>
+            <label for="cantidad">Cantidad:</label>
+            <input type="text" id="cantidad">
+            <br><br>
+            <button class="bto" onclick="calcularImporte()">Calcular Importe</button>
+            <br><br>
+            <label for="importeTotal">Importe Total:</label>
+            <input type="text" id="importeTotal" readonly>
+        </div>
+    </div>
+
+    <div class="multiple">
+        <div id="examenMultipleChoice">
+            <h2>Examen Múltiple Choice</h2>
+            <button class="bto"  onclick="generarExamen()">Generar Examen</button>
+            <br><br>
+
+            <div id="preguntas"></div>
+            <br>
+            <button class="bto" onclick="evaluarRespuestas()">Evaluar Respuestas</button>
+            <br><br>
+            <label for="respuestasCorrectas">Respuestas Correctas:</label>
+            <input type="text" id="respuestasCorrectas" readonly>
+            <br><br>
+            <label for="respuestasIncorrectas">Respuestas Incorrectas:</label>
+            <input type="text" id="respuestasIncorrectas" readonly>
+        </div>
+    </div>
+    
+    <script src="js/ejercicio27.js"></script>
+</body>
+</html>

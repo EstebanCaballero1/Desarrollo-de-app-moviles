@@ -1,0 +1,71 @@
+.pizza {
+    width: 30vw;
+    height: 20vh;
+    background-color: #B2DFDB;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.presupuestoEquipo {
+    margin-top: 1vh;
+    width: 30vw;
+    height: 45vh;
+    background-color: #E9D8F2;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.equipo {
+    margin-left: 6vh;
+}
+
+.bto {
+    width: 18vw; 
+    height: 5vh;
+    border-radius: 8px; 
+    border: 1px solid #8B4513;   
+    background-color: #CDB38B;
+    box-shadow: 2px 2px 4px #8B4513;
+    transition: 0.2s;
+    font-size: 1.5vw;
+    color: #8b4513a9;
+    cursor: pointer;
+    margin-left: 6vh;
+}
+
+.bto:hover {
+    transform: scale(1.05); 
+    background-color: #cfa565;
+    box-shadow: 2px 2px 4px #8b3b02;
+}
+.bto:active {
+    transform: scale(1.2); 
+    background-color: #af7012;
+    box-shadow: 2px 2px 4px #8b3b02;
+}
+
+.pizza2 {
+    width: 30vw;
+    height: 35.3vh;
+    background-color: #FDD9B5;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    position: relative;
+    bottom: 66vh;
+    left: 30.5vw;
+}
+
+.multiple {
+    width: 30vw;
+    height: 40vh;
+    background-color: #FAC8D8;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    position: relative;
+    bottom: 101.3vh;
+    left: 61vw;
+}

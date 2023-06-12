@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 25</title>
+    <link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+    <script src="js/ejercicio25.js"></script>
+    
+    <div class="contenedor">
+        <h1>Programa JavaScript</h1>
+        <div class="contenido">
+            <label for="numero" class="input-label">Ingrese un número:</label>
+            <input type="text" id="numero" class="input-text">
+            <button onclick="calcularCubo()" class="btn">Calcular Cubo</button><br><br>
+
+        
+            <label for="numero1" class="input-label">Ingrese el primer número:</label>
+            <input type="text" id="numero1" class="input-text"><br>
+            <label for="numero2" class="input-label">Ingrese el segundo número:</label>
+            <input type="text" id="numero2" class="input-text">
+            <button onclick="mostrarMayor()" class="btn">Mostrar Mayor</button><br><br>
+        
+
+            <div class="nombre">
+                <label for="nombre" class="input-label">Ingrese su nombre:</label>
+                <input type="text" id="nombre" class="input-text"><br>
+    
+                <label for="apellido" class="input-label">Ingrese su apellido:</label>
+                <input type="text" id="apellido" class="input-text">
+                <button onclick="concatenarNombreApellido()" class="btn concat">Concatenar</button><br><br>
+                <div class="resultado">
+                    <label for="resultado" class="input-label">Resultado:</label>
+                    <input type="text" id="resultado" class="input-text" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor2">
+        <div class="respuesta1">        
+            <div class="btn" id="respuesta1"">Aun no has hecho nada...</div>
+        </div>
+        <div class="respuesta2">
+            <div class="btn" id="respuesta2">Aun no has hecho nada...</div>
+        </div>
+    </div>
+</body>
+</html>

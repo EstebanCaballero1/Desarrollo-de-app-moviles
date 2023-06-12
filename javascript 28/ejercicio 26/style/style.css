@@ -1,0 +1,16 @@
+.contenedor {
+    margin-top: 20px;
+}
+  
+.etiqueta {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.input-contrasena {
+    margin-bottom: 10px;
+}
+  
+.boton {
+    margin-top: 10px;
+}

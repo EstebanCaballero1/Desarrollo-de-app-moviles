@@ -1,0 +1,42 @@
+.edad {
+    position: relative;
+    top: 37.5vh;
+    left: 35vw;
+    width: 30vw;
+    height: 25vh;
+    background-color: #B2DFDB;
+    border-radius: 10px;
+    padding-left: 1vw;
+    border-radius: 10px;
+}
+
+.edad h2 {
+    padding-top: 2vh;
+}
+
+.bto {
+    width: 16vw; 
+    height: 5vh;
+    border-radius: 8px; 
+    border: 1px solid #8B4513;   
+    background-color: #CDB38B;
+    box-shadow: 2px 2px 4px #8B4513;
+    transition: 0.2s;
+    font-size: 1.5vw;
+    position: relative;
+    color: #8b4513a9;
+    cursor: pointer;
+    margin-left: 6vh;
+}
+
+.bto:hover {
+    transform: scale(1.05); 
+    background-color: #cfa565;
+    box-shadow: 2px 2px 4px #8b3b02;
+}
+
+.bto:active {
+    transform: scale(1.2); 
+    background-color: #af7012;
+    box-shadow: 2px 2px 4px #8b3b02;
+}
