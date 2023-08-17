@@ -1,0 +1,4 @@
+nombre:Juan perez<br>
+               comentarios:Me encanto la revista pero encontre problemas en la portada...
+El libro no pertenecia a Penguin Random House? la portada no dice eso<hr>nombre:Juan perez<br>
+               comentarios:Me encanto la revista pero encontre problemas en la portada... El libro no pertenecia a Penguin Random House? la portada no dice eso<hr>
