@@ -8,7 +8,6 @@ const mime = {
     'png': 'image/png',
     'jpg': 'image/jpeg',
     'jpeg': 'image/jpeg',
-    // Agrega más tipos MIME según tus necesidades
 };
 
 const servidor = http.createServer((pedido, respuesta) => {
@@ -37,7 +36,7 @@ function encaminar(pedido, respuesta, camino) {
                         respuesta.end();
                     } else {
                         const extension = camino.split('.').pop();
-                        const mimearchivo = mime[extension] || 'application/octet-stream'; // Tipo MIME por defecto
+                        const mimearchivo = mime[extension] || 'application/octet-stream';
                         respuesta.writeHead(200, { 'Content-Type': mimearchivo });
                         respuesta.end(contenido);
                     }
